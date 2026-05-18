@@ -36,10 +36,11 @@ chmod +x build.sh
 
 ---
 
-## 4. Estructura del Repositorio
+# 4. Estructura del Repositorio
 
 La organización del proyecto sigue el estándar solicitado para una solución profesional:
 
+```text
 Evaluacion2-Docker-CI/
 ├── app.py                    # Script principal de consulta API
 ├── build.sh                  # Script de automatización (Dockerfile, build y run)
@@ -53,5 +54,4 @@ Evaluacion2-Docker-CI/
     └── jenkins/
         ├── stage_view.png               # Visualización del Pipeline
         ├── console_output_build.png     # Logs de construcción en Jenkins
-        ├── credentials.png              # Configuración de token GitHub
-        └── pipeline_script.txt          # Código fuente del Pipeline
+       
