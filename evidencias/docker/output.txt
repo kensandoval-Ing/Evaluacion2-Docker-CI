@@ -1,0 +1,8 @@
+3696bc73075c        app-covid           "python app.py"          7 minutes ago       Exited (0) 7 minutes ago                        samplerunning
+
+===== DATOS COVID =====
+País: Chile
+Casos Totales: 5384853
+Casos Hoy: 0
+Fallecidos: 64497
+Recuperados: 5252450
