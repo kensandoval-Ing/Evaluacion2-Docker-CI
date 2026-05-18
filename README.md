@@ -46,13 +46,13 @@ sample-app/
 ├── build.sh            # Script de automatización (genera Dockerfile, build y run)
 ├── requirements.txt    # Dependencias Python
 ├── .gitignore          # Archivos excluidos del repositorio
-├── README.md           # Documentación del proyecto
-└── evidencias/         # Carpeta de respaldos del proceso
-    ├── docker/         # Resultados de la contenerización
-    │   ├── output.txt        # Registro de docker ps -a + logs reales
+├── README.md           # Este archivo
+└── evidencias/
+    ├── docker/
+    │   ├── output.txt        # docker ps -a + logs con datos reales de la API
     │   └── screenshot.png    # Captura de la salida en consola
-    └── jenkins/        # Evidencias de automatización CI/CD
-        ├── stage_view.png            # Visualización de etapas (Pipeline)
-        ├── console_output_build.png  # Logs detallados de construcción
-        ├── credentials.png           # Configuración segura del token
-        └── pipeline_script.txt       # Código fuente del pipeline orquestado3]
+    └── jenkins/
+        ├── stage_view.png
+        ├── console_output_build.png
+        ├── credentials.png
+        └── pipeline_script.txt
