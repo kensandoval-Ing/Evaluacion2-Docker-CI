@@ -42,16 +42,18 @@ La organización del proyecto sigue el estándar solicitado para una solución p
 
 ```text
 Evaluacion2-Docker-CI/
-├── app.py                    # Script principal de consulta API
-├── build.sh                  # Script de automatización (Dockerfile, build y run)
-├── requirements.txt          # Dependencias del proyecto
-├── .gitignore                # Archivos excluidos de Git
-├── README.md                 # Documentación técnica
+├── app.py                         # Script principal de consulta API
+├── build.sh                       # Script de automatización (Dockerfile, build y run)
+├── requirements.txt               # Dependencias del proyecto
+├── .gitignore                     # Archivos excluidos de Git
+├── README.md                      # Documentación técnica
 └── evidencias/
     ├── docker/
-    │   ├── output.txt              # Registro de ejecución y logs reales
-    │   └── screenshot.png          # Captura de salida en consola
+    │   ├── output.txt             # Registro de ejecución y logs reales
+    │   └── screenshot.png         # Captura de salida en consola
     └── jenkins/
-        ├── stage_view.png               # Visualización del Pipeline
-        ├── console_output_build.png     # Logs de construcción en Jenkins
-       
+        ├── stage_view.png                 # Visualización del Pipeline
+        ├── console_output_build.png       # Logs de construcción en Jenkins
+        ├── credentials.png                # Configuración de token GitHub
+        └── pipeline_script.txt            # Código fuente del Pipeline
+```
