@@ -1,6 +1,10 @@
-#!/bin/bash
-echo "Construyendo imagen Docker..."
-docker build --network host -t app-covid .
+echo "Limpiando contenedores antiguos..."
+docker stop samplerunning 2>/dev/null
+docker rm samplerunning 2>/dev/null
 
-echo "Ejecutando contenedor..."
-docker run --network host --name samplerunning --env API_URL="https://disease.sh/v3/covid-19" app-covid
+echo "Construyendo imagen Docker..."
+docker build -t app-covid .
+
+echo "Ejecutando contenedor interactivo..."
+# El flag -it es vital para que puedas escribir el país
+docker run -it --name samplerunning -e API_URL=$API_URL app-covid
