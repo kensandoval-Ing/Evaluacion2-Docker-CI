@@ -1,8 +1,11 @@
-3696bc73075c        app-covid           "python app.py"          7 minutes ago       Exited (0) 7 minutes ago                        samplerunning
+ee3dd64e253c        app-covid             "python app.py"          6 minutes ago       Exited (0) 6 minutes ago                                       samplerunning
+🏥 Ingrese el país a consultar (en inglés, ej: Chile, USA, Italy): mexico
 
-===== DATOS COVID =====
-País: Chile
-Casos Totales: 5384853
-Casos Hoy: 0
-Fallecidos: 64497
-Recuperados: 5252450
+✅ REPORTE EPIDEMIOLÓGICO: MEXICO
+-----------------------------------
+📌 Casos Totales: 7702809
+📌 Casos de Hoy:  0
+📌 Fallecidos:    334958
+📌 Recuperados:   6899865
+📌 Casos Activos: 467986
+-----------------------------------
