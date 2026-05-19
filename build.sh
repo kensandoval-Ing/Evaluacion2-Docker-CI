@@ -1,10 +1,19 @@
-echo "Limpiando contenedores antiguos..."
+#!/bin/bash
+
+# 1. Definimos la URL (por si acaso se necesita en el script)
+API_URL="https://disease.sh/v3/covid-19"
+
+echo "🚀 Iniciando Monitor COVID-19 CLI..."
+echo "---------------------------------------"
+
+# 2. Limpieza de contenedores previos
 docker stop samplerunning 2>/dev/null
 docker rm samplerunning 2>/dev/null
 
-echo "Construyendo imagen Docker..."
+# 3. Construcción de la imagen
 docker build -t app-covid .
 
-echo "Ejecutando contenedor interactivo..."
-# El flag -it es vital para que puedas escribir el país
-docker run -it --name samplerunning -e API_URL=$API_URL app-covid
+# 4. Ejecución inyectando la URL directamente
+echo "✅ Ejecución exitosa. Cargando interfaz..."
+echo "---------------------------------------"
+docker run -it --name samplerunning -e API_URL="https://disease.sh/v3/covid-19" app-covid
