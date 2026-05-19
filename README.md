@@ -36,23 +36,24 @@ chmod +x build.sh
 
 ---
 
-## 4. Estructura del Repositorio
+# 4. Estructura del Repositorio
 
 La organización del proyecto sigue el estándar solicitado para una solución profesional:
 
-sample-app/
-│
-├── app.py              # Script principal que consulta la API
-├── build.sh            # Script de automatización (genera Dockerfile, build y run)
-├── requirements.txt    # Dependencias Python
-├── .gitignore          # Archivos excluidos del repositorio
-├── README.md           # Este archivo
+```text
+Evaluacion2-Docker-CI/
+├── app.py                         # Script principal de consulta API
+├── build.sh                       # Script de automatización (Dockerfile, build y run)
+├── requirements.txt               # Dependencias del proyecto
+├── .gitignore                     # Archivos excluidos de Git
+├── README.md                      # Documentación técnica
 └── evidencias/
     ├── docker/
-    │   ├── output.txt        # docker ps -a + logs con datos reales de la API
-    │   └── screenshot.png    # Captura de la salida en consola
+    │   ├── output.txt             # Registro de ejecución y logs reales
+    │   └── screenshot.png         # Captura de salida en consola
     └── jenkins/
-        ├── stage_view.png
-        ├── console_output_build.png
-        ├── credentials.png
-        └── pipeline_script.txt
+        ├── stage_view.png                 # Visualización del Pipeline
+        ├── console_output_build.png       # Logs de construcción en Jenkins
+        ├── credentials.png                # Configuración de token GitHub
+        └── pipeline_script.txt            # Código fuente del Pipeline
+```
